@@ -20,3 +20,4 @@ while state_code != "":
 """Printing loop"""
 for short_state_name, long_state_name in CODE_TO_NAME.items():
     print(f"{short_state_name:3} is {long_state_name}")
+

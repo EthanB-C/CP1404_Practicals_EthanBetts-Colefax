@@ -1,3 +1,5 @@
+"""CP1404 Word Occurrences program"""
+
 TEXT = "this is a collection of words of nice words this is a fun thing it is"
 text_dict = {}
 
