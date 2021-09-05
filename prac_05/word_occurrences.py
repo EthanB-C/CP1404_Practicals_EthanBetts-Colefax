@@ -7,7 +7,7 @@ for word in text_list:
         text_dict[word] += 1
     else:
         text_dict[word] = 1
-print(f"Text = {TEXT}")
+print(f"Text: {TEXT}")
 
 longest_word = 0
 for word in text_dict.keys():
