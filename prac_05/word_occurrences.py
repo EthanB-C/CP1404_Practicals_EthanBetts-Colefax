@@ -13,7 +13,6 @@ longest_word = 0
 for word in text_dict.keys():
     if len(word) > longest_word:
         longest_word = len(word)
-print(longest_word)
 
 for word, count in text_dict.items():
-    print(f"{word} : {count}")
+    print(f"{word:{longest_word}} : {count}")
