@@ -6,7 +6,7 @@ from prac_06.car import Car
 
 def main():
     """Demo test code to show how to use car class."""
-    my_car = Car(180)
+    my_car = Car("Car", 180)
     my_car.drive(30)
     print("Car fuel =", my_car.fuel)
     print("Car odo =", my_car.odometer)
@@ -16,7 +16,7 @@ def main():
     # print("Car {self.fuel}, {self.odometer}".format(self=my_car))
 
     """Create Limo Object"""
-    limo = Car(100)
+    limo = Car("Limo", 100)
     limo.add_fuel(20)
     print("Limo fuel =", limo.fuel)
     print("Limo odo =", limo.odometer)
