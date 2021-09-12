@@ -1,4 +1,4 @@
-"""Programming Language Program"""
+"""Programming Language Class"""
 
 
 class ProgrammingLanguage:
