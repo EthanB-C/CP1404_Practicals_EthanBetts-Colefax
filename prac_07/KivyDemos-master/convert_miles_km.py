@@ -14,13 +14,19 @@ class ConvertMilesToKM(App):
         return self.root
 
     def convert_miles_to_kilometres(self, input_miles):
-        miles = int(input_miles)
-        kilometres = miles * 1.609
-        self.message = str(kilometres)
+        try:
+            miles = int(input_miles)
+            kilometres = miles * 1.609
+            self.message = str(kilometres)
+        except ValueError:
+            self.message = '0.0'
 
     def handle_increment(self, increment):
-        new_input_miles = int(self.root.ids.user_input.text) + increment
-        self.root.ids.user_input.text = str(new_input_miles)
+        try:
+            new_input_miles = int(self.root.ids.user_input.text) + increment
+            self.root.ids.user_input.text = str(new_input_miles)
+        except ValueError:
+            self.root.ids.user_input.text = str(0 + increment)
 
 
 ConvertMilesToKM().run()
